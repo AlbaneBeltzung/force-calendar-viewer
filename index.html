@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FoRCE Calendar Viewer</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="js/jquery-3.3.1.min.js" defer></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+<div class="container">
+
+    <div id="calendar-view">
+        <div class="row">
+            <div id="calendar" class="col-md-12">
+                <table style="width:100%">
+                    <thead>
+                    <tr>
+                        <th class="c-title" colspan="9">FoRCE Calendar Viewer</th>
+                    </tr>
+                    </thead>
+                    <thead class="c-head">
+                    <tr>
+                        <th class="c-axis fa-icons">
+                            <i class="fas fa-angle-left fa-3x"></i>
+                            <i class="fas fa-angle-right fa-3x"></i>
+                        </th>
+                        <th>Monday<br/>15.01.2018</th>
+                        <th>Tuesday<br/>16.01.2018</th>
+                        <th>Wednesday<br/>17.01.2018</th>
+                        <th>Thursday<br/>18.01.2018</th>
+                        <th>Friday<br/>19.01.2018</th>
+                        <th>Saturday<br/>20.01.2018</th>
+                        <th>Sunday<br/>21.01.2018</th>
+                        <th class="group-select">
+                            <select id="group-selection" onchange="fillGroupList()" name="Select a Group">
+                            </select>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody class="c-body">
+                    <tr>
+                        <td class="c-axis">08</td>
+                        <td rowspan="4">
+                            <div class="c-entry" tooltip="This is a first tooltip">
+                                <p class="c-entry-text">
+                                    1. Übung<br>mandatory
+                                </p>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td id="groups" rowspan="10"></td>
+                    </tr>
+                    <tr>
+                        <td class="c-axis">09</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <td class="c-axis">10</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <td class="c-axis">11</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <td class="c-axis">12</td>
+                        <td></td>
+                        <td>
+                            <div class="c-entry" tooltip="This is a second tooltip">
+                                <p class="c-entry-text">
+                                    Team Lunch<br>optional
+                                </p>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <td class="c-axis">13</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <td class="c-axis">14</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <td class="c-axis">15</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <td class="c-axis">16</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="c-axis">17</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
